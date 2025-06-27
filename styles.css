@@ -1,20 +1,16 @@
 
 .grid-container {
     display: grid;
-    height: 98vh;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr; 
-    box-sizing: border-box;
+    height: 100vh;
     gap: 10px;
 }
 
 
-.header, .sidebar, .content {
-    border: solid red;
-}
 .header {
     grid-column: 2 / 3;
-
+    background-color: lightgreen;
     display: grid;
     gap: 5px;
     grid-template-columns: 7fr 4fr;
@@ -25,6 +21,7 @@
 
 .sidebar {
     grid-row: 1 / 3;
+    background-color: lightblue;
 }
 
 .sidebar-content {
@@ -41,6 +38,7 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
     gap: 5px;
+    background-color: lightsalmon;
 }
 
 .cards {
@@ -52,7 +50,13 @@
 
 .card {
     height: 300px;
-    border: solid blue
+    background: white;  
+    display: grid;
+    grid-template-rows: 9fr 1fr;
+    border-style: outset;
+    border: solid red 3px;
+    border-radius: 20px;
+    padding: 10px;
 
 }
 
@@ -60,15 +64,79 @@
     display: grid;
 }
 
-.announcements, .trending {
-    margin: 30px;
+.announcements, .trending, .main-content {
+    margin: 10px;
 }
 
 .section-title {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin: 10px 20px 30px 5px;
 }
 
-.section-title + div {
-    border: solid
+.trending-content {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 50px;
+    background: coral;
+}
+
+.announcement-content {
+    background: coral;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.buttons {
+    border: solid blue;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.welcome-container {
+    border: solid blue;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.welcome-container > img {
+    grid-row: 1 ;
+    place-content: center;
+    margin: 10px;
+}
+
+.quick-menu-content {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: 40px;
+    margin: 20px;
+}
+
+.search-bar {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: 1fr 9fr;
+}
+
+.search-bar > input {
+    width: 100%;
+}
+
+.search-bar > img {
+    margin: 15px;
+}
+
+.card-icon-grid {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    border: solid green;
+    gap: 20px;
 }
