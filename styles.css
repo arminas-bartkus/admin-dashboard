@@ -12,12 +12,12 @@
     grid-column: 2 / 3;
     background-color: lightgreen;
     display: grid;
-    gap: 5px;
     grid-template-columns: 7fr 4fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 0.25fr 1fr;
   
 
 }
+
 
 .sidebar {
     grid-row: 1 / 3;
@@ -27,11 +27,23 @@
 .sidebar-content {
     display: grid;
     height: 65%;
-    margin: 5px;
-    gap: 5px;
+    column-gap: 30px;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 2fr repeat(5, 1fr) 2fr repeat(3, 1fr);
-    border: solid green;
+    font-size: 2rem;
+    place-content: center;
+}
+
+.sidebar-content img {
+    font-size: 1rem;
+    margin-left: 10px;
+    height: 50px;
+
+}
+
+.sidebar-content div:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 5px lightgreen;
 }
 
 .content {
@@ -76,8 +88,22 @@
 .trending-content {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 50px;
-    background: coral;
+    gap: 10px;
+    place-content: center;
+    
+}
+
+.trending-content img {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.trending-content div {
+    align-self: center;
+    margin-left: 20px;
 }
 
 .announcement-content {
@@ -89,7 +115,6 @@
 }
 
 .buttons {
-    border: solid blue;
     display: grid;
     grid-auto-flow: column;
     justify-content: space-around;
@@ -97,15 +122,14 @@
 }
 
 .welcome-container {
-    border: solid blue;
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 10fr;
     gap: 20px;
     align-items: center;
 }
 
 .welcome-container > img {
-    grid-row: 1 ;
+    grid-row: 1;
     place-content: center;
     margin: 10px;
 }
@@ -116,6 +140,7 @@
     justify-content: end;
     gap: 40px;
     margin: 20px;
+    align-items: center;
 }
 
 .search-bar {
@@ -130,13 +155,21 @@
 }
 
 .search-bar > img {
-    margin: 15px;
+    margin-left: 15px;
+    height: 40px;
+}
+
+.quick-menu-content > img {
+    height: 45px;
 }
 
 .card-icon-grid {
     display: grid;
     grid-auto-flow: column;
     justify-content: end;
-    border: solid green;
-    gap: 20px;
+}
+
+.card-icon-grid img {
+    height: 40px;
+    margin-right: 20px;
 }
