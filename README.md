@@ -14,3 +14,6 @@ Main features this project will include:
 - Grid features including gap, minmax etc.
 - Multiple sections including sidebar, header, 
 and content sections 
+
+
+Icons used in project provided by :<a href="https://www.flaticon.com/free-icons/firefighter" title="firefighter icons">Firefighter icons created by Freepik - Flaticon</a>
