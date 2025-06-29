@@ -16,4 +16,5 @@ Main features this project will include:
 and content sections 
 
 
-Icons used in project provided by :<a href="https://www.flaticon.com/free-icons/firefighter" title="firefighter icons">Firefighter icons created by Freepik - Flaticon</a>
+Icons used in project provided by: <a href="https://www.flaticon.com/free-icons/firefighter" title="firefighter icons">Icons created by Freepik - Flaticon</a>
+
